@@ -1,3 +1,18 @@
+.imgFx {
+  filter: drop-shadow(0 2px 4px #646464);
+  cursor: pointer;
+}
+.imgFx:hover {
+  opacity: 90%;
+}
+.imgFx2 {
+  filter: drop-shadow(0 2px 4px #646464);
+  cursor: pointer;
+}
+.imgFx2:hover {
+  filter: contrast(200%);
+  opacity: 70%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,7 +181,7 @@ nav .nav-main-container .nav-container {
   flex-direction: column;
   width: 100%;
   padding: 1% 0;
-  background-color: #f1efeb;
+  background-color: #f4f4f4;
 }
 nav .nav-main-container .nav-container h1 {
   font-size: 4rem;
@@ -220,6 +235,11 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  filter: drop-shadow(0 2px 4px #646464);
+  cursor: pointer;
+}
+.home .space-images img:hover {
+  opacity: 90%;
 }
 .home .visit-planets {
   padding: 15px;
@@ -246,6 +266,21 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  padding: 2% 8%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background-color: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -254,4 +289,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  filter: drop-shadow(0 2px 4px #646464);
+  cursor: pointer;
+}
+.home .walk .walk-img img:hover {
+  filter: contrast(200%);
+  opacity: 70%;
 }

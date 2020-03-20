@@ -1,1 +1,35 @@
-// Mixins Here
+.btnStyle (@btnBg, @btnColor){
+    padding: 2% 8%;
+    background-color: @btnBg;
+    color: @btnColor;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        color: @btnBg;
+        background-color: @btnColor;
+    }
+}
+
+.imgFx {
+    filter: drop-shadow(0 2px 4px rgb(100, 100, 100));
+    cursor: pointer;
+
+    &:hover {
+        opacity: 90%;
+    }
+}
+
+.imgFx2 {
+    filter: drop-shadow(0 2px 4px rgb(100, 100, 100));
+    cursor: pointer;
+
+    &:hover {
+        filter: contrast(200%);
+        opacity: 70%;
+    }
+}
