@@ -209,11 +209,12 @@ nav .nav-main-container .nav-container .nav-links {
   display: flex;
   justify-content: space-between;
   width: 25%;
-  padding: 3% 0 0;
+  padding: 1% 0 0;
 }
 @media (max-width: 500px) {
   nav .nav-main-container .nav-container .nav-links {
     width: 80%;
+    padding: 3% 0 2%;
   }
 }
 nav .nav-main-container .nav-container .nav-links .link {
@@ -317,8 +318,8 @@ footer {
 }
 .home .walk .walk-text .btn {
   padding: 2% 8%;
-  background-color: black;
-  color: white;
+  background-color: #22283A;
+  color: #F6F7F8;
   border-radius: 5px;
   font-size: 1.3rem;
   font-weight: bold;
@@ -333,8 +334,8 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  color: black;
-  background-color: white;
+  color: #22283A;
+  background-color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -356,4 +357,81 @@ footer {
 .home .walk .walk-img img:hover {
   filter: contrast(150%);
   opacity: 90%;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #bbe0c3;
+  width: 100%;
+  height: 100%;
+}
+body .forms {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: auto;
+}
+body .forms .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  width: 100%;
+  height: 80%;
+}
+body .forms .form-container img {
+  width: 20%;
+}
+body .forms .form-container .email,
+body .forms .form-container .password {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2% 0;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  body .forms .form-container .email,
+  body .forms .form-container .password {
+    width: 90%;
+  }
+}
+body .forms .form-container .email label,
+body .forms .form-container .password label {
+  padding: 3%;
+}
+body .forms .form-container .email input,
+body .forms .form-container .password input {
+  padding: 4%;
+}
+body .forms .form-container .btn {
+  padding: 2% 8%;
+  background-color: #22283A;
+  color: orange;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  margin: 2% 0;
+  padding: 1% 5%;
+}
+@media (max-width: 500px) {
+  body .forms .form-container .btn {
+    width: 100%;
+    padding: 5% 8%;
+  }
+}
+body .forms .form-container .btn:hover {
+  color: #22283A;
+  background-color: orange;
+}
+@media (max-width: 500px) {
+  body .forms .form-container .btn {
+    width: 40%;
+    margin-top: 5%;
+  }
 }
