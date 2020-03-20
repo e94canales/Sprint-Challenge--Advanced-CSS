@@ -9,6 +9,11 @@
     outline: none;
     cursor: pointer;
 
+    @media @phone {
+        width: 100%;
+        padding: 5% 8%;
+      }
+
     &:hover {
         color: @btnBg;
         background-color: @btnColor;
@@ -29,7 +34,7 @@
     cursor: pointer;
 
     &:hover {
-        filter: contrast(200%);
-        opacity: 70%;
+        filter: contrast(150%);
+        opacity: 90%;
     }
 }

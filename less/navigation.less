@@ -1,9 +1,14 @@
 // Navigation code here
 
 nav {
+
+    position: sticky;
+    top: .1px;
+    z-index: 100;
+    
     .nav-main-container {
 
-        //
+        
 
             .nav-container {
                 display: flex;
@@ -11,7 +16,11 @@ nav {
                 flex-direction: column;
                 width: 100%;
                 padding: 1% 0;
-                background-color: #f4f4f4;
+                background-color: #f4f4f4cb;
+
+                @media @phone {
+                    padding: 2% 0;
+                }
 
                 h1 {
                     font-size: 4rem;
@@ -32,7 +41,11 @@ nav {
                     display: flex;
                     justify-content: space-between;
                     width: 25%;
-                    padding: 1% 0 0;
+                    padding: 3% 0 0;
+
+                    @media @phone {
+                        width: 80%;
+                    }
 
                     .link {
                         color: black;
