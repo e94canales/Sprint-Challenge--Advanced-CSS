@@ -380,6 +380,11 @@ footer {
 .signin-container .forms .form-container img {
   width: 20%;
 }
+@media (max-width: 500px) {
+  .signin-container .forms .form-container img {
+    width: 50%;
+  }
+}
 .signin-container .forms .form-container .email,
 .signin-container .forms .form-container .password {
   display: flex;
@@ -391,7 +396,7 @@ footer {
 @media (max-width: 500px) {
   .signin-container .forms .form-container .email,
   .signin-container .forms .form-container .password {
-    width: 90%;
+    width: 80%;
   }
 }
 .signin-container .forms .form-container .email label,
