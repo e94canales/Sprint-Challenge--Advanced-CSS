@@ -1,0 +1,61 @@
+.signin-container {
+    background-color: rgb(187, 224, 195);
+    width: 100%;
+    height: 100vh;
+
+    .forms {
+        display: flex;
+        align-content: center;
+        width: 100%;
+        height: auto;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            width: 100%;
+            height: 80%;
+
+            img {
+                width: 20%;
+
+                @media @phone {
+                    width: 50%;
+                }
+            }
+    
+
+            .email, .password {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                padding: 2% 0;
+                font-size: 2rem;
+
+                @media @phone {
+                    width: 80%;
+                }
+
+                    label {
+                        padding: 3%;
+                    }
+                    input {
+                        padding: 4%;
+                    }
+            }
+            
+            .btn {
+                .btnStyle(@btn-bg-color, orange);
+                margin: 2% 0;
+                padding: 1% 5%;
+
+                @media @phone {
+                    width: 40%;
+                    margin-top: 5%;
+                }
+            }  
+            
+        }
+    }
+}
